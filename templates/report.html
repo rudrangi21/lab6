@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Let see if your password mets the requirements</p>
+{% if final_check %}
+
+<p>Your password passed the 3 requirements!</p>
+
+{% else %}
+
+<p>Oh no! Looks like you had issues with your password!</p>
+<p>Here are the requirements you failed:</p>
+<ul>
+    <li>You did not use  an uppercase character.</li>
+    <li>You did not end your username with a number.</li>
+</ul>
+
+{% endif %}
+
+
+{% endblock %}
